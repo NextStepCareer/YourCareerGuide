@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="hcjuXbK1EBwXF1P4TI_G6ahKnW3pvvJbt56PSRjsnEg" />
+<title>StudyBud AI Career Finder</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container">
+
+<h1 class="glow">StudyBud Career AI</h1>
+
+<form action="/recommend" method="POST">
+
+<label>Grade</label>
+
+<select name="grade">
+<option>10</option>
+<option>Intermediate</option>
+<option>College</option>
+</select>
+
+<label>Skills</label>
+<input type="text" name="skills" placeholder="coding, math, design">
+
+<label>Interests</label>
+<input type="text" name="interests" placeholder="AI, art, business">
+
+<button type="submit">Find My Career</button>
+
+</form>
+
+</div>
+
+<script src="/static/particles.js"></script>
+
+</body>
+</html>
