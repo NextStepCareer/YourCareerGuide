@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Career Results</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<h1 class="glow">Your Career Matches</h1>
+
+<div class="results">
+
+{% for r in results %}
+
+<div class="card">
+
+<h2>{{r.career}}</h2>
+
+<p>Match: {{r.score}}%</p>
+
+<p>Skills Needed: {{r.skills_needed}}</p>
+
+<p>Course: {{r.course}}</p>
+
+<a href="{{r.link}}" target="_blank">Start Learning</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<a href="/">Try Again</a>
+
+</body>
+</html>
